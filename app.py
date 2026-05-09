@@ -188,6 +188,15 @@ section[data-testid="stSidebar"] [data-testid="stFileUploader"] section:hover {
 .info-box ol { color: #475569; line-height: 1.85; }
 
 header[data-testid="stHeader"] { background: transparent; }
+
+/* ─── SUPPRESSION ESPACE HAUT ─── */
+#root > div:first-child { margin-top: 0 !important; }
+.stApp { margin-top: 0 !important; }
+.stApp > header { display: none !important; }
+div[data-testid="stAppViewContainer"] > section:first-child { padding-top: 0 !important; }
+div[data-testid="stToolbar"] { display: none !important; }
+div[data-testid="stDecoration"] { display: none !important; }
+div[data-testid="stStatusWidget"] { display: none !important; }
 .stSelectbox label { font-size: 13px; font-weight: 500; color: #374151; }
 
 /* ─── SIDEBAR KPI ─── */
