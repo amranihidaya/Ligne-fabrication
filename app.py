@@ -31,17 +31,11 @@ html, body, [class*="css"] {
 }
 
 .main .block-container {
-    padding-top: 0.5rem;
+    padding-top: 2rem;
     padding-bottom: 3rem;
     padding-left: 2rem;
     padding-right: 2rem;
     max-width: 1400px;
-}
-
-/* Masquer le header vide Streamlit */
-header[data-testid="stHeader"] {
-    height: 0 !important;
-    min-height: 0 !important;
 }
 
 h1 {
@@ -49,7 +43,6 @@ h1 {
     font-size: 1.65rem !important;
     color: #0f172a !important;
     letter-spacing: -0.03em;
-    margin-top: 0.2rem !important;
     margin-bottom: 0.2rem !important;
 }
 h2 {
@@ -63,7 +56,7 @@ h3 { font-weight: 500 !important; font-size: 0.95rem !important; color: #334155 
 
 .subtitle {
     color: #64748b; font-size: 0.9rem;
-    margin-bottom: 0.5rem; margin-top: -0.1rem; font-weight: 400;
+    margin-bottom: 1.75rem; margin-top: -0.2rem; font-weight: 400;
 }
 
 /* ─── SIDEBAR ─── */
@@ -102,7 +95,7 @@ section[data-testid="stSidebar"] [data-testid="stFileUploader"] section:hover {
 /* ─── TABS ─── */
 .stTabs [data-baseweb="tab-list"] {
     gap: 2px; background: transparent;
-    border-bottom: 1.5px solid #e2e8f0; margin-bottom: 1.25rem;
+    border-bottom: 1.5px solid #e2e8f0; margin-bottom: 1.75rem;
 }
 .stTabs [data-baseweb="tab"] {
     height: 40px; padding: 0 16px; background: transparent;
@@ -188,15 +181,6 @@ section[data-testid="stSidebar"] [data-testid="stFileUploader"] section:hover {
 .info-box ol { color: #475569; line-height: 1.85; }
 
 header[data-testid="stHeader"] { background: transparent; }
-
-/* ─── SUPPRESSION ESPACE HAUT ─── */
-#root > div:first-child { margin-top: 0 !important; }
-.stApp { margin-top: 0 !important; }
-.stApp > header { display: none !important; }
-div[data-testid="stAppViewContainer"] > section:first-child { padding-top: 0 !important; }
-div[data-testid="stToolbar"] { display: none !important; }
-div[data-testid="stDecoration"] { display: none !important; }
-div[data-testid="stStatusWidget"] { display: none !important; }
 .stSelectbox label { font-size: 13px; font-weight: 500; color: #374151; }
 
 /* ─── SIDEBAR KPI ─── */
